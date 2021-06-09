@@ -22,7 +22,7 @@ export const MainContainer = () => {
         fetchData()
     }, [])
     return (
-        <Wrap position='relative' height='86vh' width='90vw' background={({ theme }) => theme.white} radius='25px' shadow='3px 3px 33px black' overflow='hidden'>
+        <Wrap position='relative' height='88vh' width='90vw' background={({ theme }) => theme.white} radius='25px' shadow='3px 3px 33px black' overflow='hidden'>
             {!appData.length ? <Loading /> : 
             <>
             <ProjectSection />

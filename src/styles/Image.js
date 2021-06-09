@@ -16,6 +16,7 @@ export const Image = styled.img`
     ${({ wave }) => wave && `
         position: absolute;
         width: 100%;
+        height: 30vh;
         bottom: 0;
         right: 0;
     `}

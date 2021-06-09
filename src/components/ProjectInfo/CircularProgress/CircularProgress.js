@@ -15,9 +15,9 @@ import { useSelector } from 'react-redux';
 export const CircularProgress = () => {
     const { quizScore, quizScoreTotal } = useSelector(({ userReducer }) => userReducer);
     return (
-        <Wrap z='0' position='relative' padding='0 100px 0 0' width='8vw' direction='column' justicy='center' align='center'>
-            <Paragraph margin='0'>Quiz Score</Paragraph>
-            <Paragraph margin='9px 0 20px 0'>{quizScore}<Span color={({ theme }) => theme.grey}> / {quizScoreTotal}</Span></Paragraph>
+        <Wrap z='0' position='relative' width='8vw' direction='column' justicy='center' align='center' padding='0 50px'>
+            <Paragraph fontSize='2.5vh' margin='0'>Quiz Score</Paragraph>
+            <Paragraph fontSize='2vh' margin='9px 0 20px 0'>{quizScore}<Span fontSize='2vh' color={({ theme }) => theme.grey}> / {quizScoreTotal}</Span></Paragraph>
             <CircularProgressbarWithChildren
                 value={quizScoreTotal === 0 ? 0 : (quizScore / quizScoreTotal) *100}
                 text={`${Math.round(quizScoreTotal === 0 ? 0 : (quizScore / quizScoreTotal) *100)} %`}

@@ -10,12 +10,14 @@ export const ProjectSection = () => {
     return (
         <Wrap flex='1' direction='column' justify='flex-start' align='center'>
             <Header />
-            <Wrap padding='20px 0 0 0' width='100%' direction='row' justify='space-around' align='center'>
-                <Lessons />
-                <CircularProgress />
+            <Wrap flex='1' direction='column' justify='space-between' align='center' >
+                <Wrap padding='20px 0 0 0' width='100%' direction='row' justify='space-around' align='center'>
+                    <Lessons />
+                    <CircularProgress />
+                </Wrap>
+                <DownInformation />
+                <PaginationWrap />
             </Wrap>
-            <DownInformation />
-            <PaginationWrap />
         </Wrap>
     )
 }

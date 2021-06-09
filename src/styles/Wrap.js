@@ -22,8 +22,6 @@ export const Wrap = styled.div`
         display:flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        bottom: 0;
-        padding: 0 0 20px 0;
+        padding: 10px 0 20px 0;
     `}
 `
